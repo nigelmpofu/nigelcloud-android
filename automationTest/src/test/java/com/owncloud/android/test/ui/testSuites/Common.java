@@ -18,7 +18,7 @@
  *
  */
 
-package com.owncloud.android.test.ui.testSuites;
+package com.nigelcloud.android.test.ui.testSuites;
 
 import static org.junit.Assert.*;
 
@@ -56,7 +56,7 @@ public class Common{
 		capabilities.setCapability("platformName", "Android");
 		capabilities.setCapability("deviceName", "test");
 		capabilities.setCapability("app", app.getAbsolutePath());
-		capabilities.setCapability("appPackage", "com.owncloud.android");
+		capabilities.setCapability("appPackage", "com.nigelcloud.android");
 		capabilities.setCapability("appActivity", 
 				".ui.activity.FileDisplayActivity");	
 		capabilities.setCapability("appWaitActivity", 

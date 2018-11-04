@@ -18,12 +18,11 @@
 -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.owncloud.android"
+    package="com.nigelcloud.android"
     android:versionCode="${versionCode}"
     android:versionName="${versionName}">
 
     <uses-sdk
-        android:minSdkVersion="14"
         android:targetSdkVersion="26"
         tools:overrideLibrary="android.support.customtabs"/>
 
@@ -66,15 +65,15 @@
     <uses-permission android:name="android.permission.USE_FINGERPRINT" />
 
     <application
-        android:name=".MainApp"
+        android:name="com.nigelcloud.android.MainApp"
         android:icon="@mipmap/icon"
         android:label="@string/app_name"
-        android:manageSpaceActivity="com.owncloud.android.ui.activity.ManageSpaceActivity"
+        android:manageSpaceActivity="com.nigelcloud.android.ui.activity.ManageSpaceActivity"
         android:resizeableActivity="true"
         android:supportsPictureInPicture="false"
         android:theme="@style/Theme.ownCloud.Toolbar">
         <activity
-            android:name=".ui.activity.FileDisplayActivity"
+            android:name="com.nigelcloud.android.ui.activity.FileDisplayActivity"
             android:theme="@style/Theme.ownCloud.Toolbar.Drawer">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -82,10 +81,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ui.activity.ManageAccountsActivity" />
-        <activity android:name=".ui.activity.UploadFilesActivity" />
+        <activity android:name="com.nigelcloud.android.ui.activity.ManageAccountsActivity" />
+        <activity android:name="com.nigelcloud.android.ui.activity.UploadFilesActivity" />
         <activity
-            android:name=".ui.activity.ReceiveExternalFilesActivity"
+            android:name="com.nigelcloud.android.ui.activity.ReceiveExternalFilesActivity"
             android:excludeFromRecents="true"
             android:taskAffinity="">
             <intent-filter>
@@ -104,14 +103,14 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".ui.activity.Preferences"
+            android:name="com.nigelcloud.android.ui.activity.Preferences"
             android:theme="@style/Theme.ownCloud" />
         <activity
-            android:name=".ui.preview.PreviewImageActivity"
+            android:name="com.nigelcloud.android.ui.preview.PreviewImageActivity"
             android:theme="@style/Theme.ownCloud.Overlay" />
 
         <service
-            android:name=".authentication.AccountAuthenticatorService"
+            android:name="com.nigelcloud.android.authentication.AccountAuthenticatorService"
             android:exported="true">
             <intent-filter android:priority="100">
                 <action android:name="android.accounts.AccountAuthenticator" />
@@ -122,7 +121,7 @@
                 android:resource="@xml/authenticator" />
         </service>
         <service
-            android:name=".syncadapter.FileSyncService"
+            android:name="com.nigelcloud.android.syncadapter.FileSyncService"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.content.SyncAdapter" />
@@ -133,25 +132,25 @@
                 android:resource="@xml/syncadapter_files" />
         </service>
         <service
-            android:name=".files.services.RetryUploadJobService"
+            android:name="com.nigelcloud.android.files.services.RetryUploadJobService"
             android:exported="true"
             android:permission="android.permission.BIND_JOB_SERVICE" />
         <service
-            android:name=".files.services.RetryDownloadJobService"
+            android:name="com.nigelcloud.android.files.services.RetryDownloadJobService"
             android:exported="true"
             android:permission="android.permission.BIND_JOB_SERVICE" />
         <service
-            android:name=".files.services.CameraUploadsSyncJobService"
+            android:name="com.nigelcloud.android.files.services.CameraUploadsSyncJobService"
             android:permission="android.permission.BIND_JOB_SERVICE"
             android:exported="true">
         </service>
         <service
-            android:name=".files.services.AvailableOfflineSyncJobService"
+            android:name="com.nigelcloud.android.files.services.AvailableOfflineSyncJobService"
             android:permission="android.permission.BIND_JOB_SERVICE">
         </service>
 
         <provider
-            android:name=".providers.FileContentProvider"
+            android:name="com.nigelcloud.android.providers.FileContentProvider"
             android:authorities="@string/authority"
             android:enabled="true"
             android:exported="true"
@@ -159,13 +158,13 @@
             android:syncable="true"
             />
         <provider
-            android:name=".providers.UsersAndGroupsSearchProvider"
+            android:name="com.nigelcloud.android.providers.UsersAndGroupsSearchProvider"
             android:authorities="@string/search_suggest_authority"
             android:enabled="true"
             android:exported="false"
             android:label="@string/search_users_and_groups_hint" />
         <provider
-            android:name=".providers.DocumentsStorageProvider"
+            android:name="com.nigelcloud.android.providers.DocumentsStorageProvider"
             android:authorities="@string/document_provider_authority"
             android:enabled="@bool/atLeastKitKat"
             android:exported="true"
@@ -188,7 +187,7 @@
         </provider>
 
         <activity
-            android:name=".authentication.AuthenticatorActivity"
+            android:name="com.nigelcloud.android.authentication.AuthenticatorActivity"
             android:exported="true"
             android:launchMode="singleTask"
             android:theme="@style/Theme.ownCloud.Authenticator">
@@ -208,30 +207,30 @@
             </intent-filter>
         </activity>
 
-        <service android:name=".services.OperationsService" />
-        <service android:name=".files.services.FileDownloader" />
-        <service android:name=".files.services.FileUploader" />
-        <service android:name=".media.MediaService" />
+        <service android:name="com.nigelcloud.android.services.OperationsService" />
+        <service android:name="com.nigelcloud.android.files.services.FileDownloader" />
+        <service android:name="com.nigelcloud.android.files.services.FileUploader" />
+        <service android:name="com.nigelcloud.android.media.MediaService" />
 
         <activity
-            android:name=".ui.activity.PassCodeActivity"
+            android:name="com.nigelcloud.android.ui.activity.PassCodeActivity"
             android:theme="@style/Theme.ownCloud" />
         <activity
-            android:name=".ui.activity.ConflictsResolveActivity"
+            android:name="com.nigelcloud.android.ui.activity.ConflictsResolveActivity"
             android:theme="@style/Theme.ownCloud" />
-        <activity android:name=".ui.activity.GenericExplanationActivity" />
+        <activity android:name="com.nigelcloud.android.ui.activity.GenericExplanationActivity" />
         <activity
-            android:name=".ui.activity.ErrorsWhileCopyingHandlerActivity"
+            android:name="com.nigelcloud.android.ui.activity.ErrorsWhileCopyingHandlerActivity"
             android:theme="@style/Theme.ownCloud" />
-        <activity android:name=".ui.activity.LogHistoryActivity" android:configChanges="orientation|screenSize"/>
-        <activity android:name=".ui.errorhandling.ErrorShowActivity" />
+        <activity android:name="com.nigelcloud.android.ui.activity.LogHistoryActivity" android:configChanges="orientation|screenSize"/>
+        <activity android:name="com.nigelcloud.android.ui.errorhandling.ErrorShowActivity" />
         <activity
-            android:name=".ui.activity.UploadListActivity"
+            android:name="com.nigelcloud.android.ui.activity.UploadListActivity"
             android:theme="@style/Theme.ownCloud.Toolbar.Drawer" />
-        <activity android:name=".ui.activity.WhatsNewActivity" />
+        <activity android:name="com.nigelcloud.android.ui.activity.WhatsNewActivity" />
 
         <receiver
-            android:name=".broadcastreceivers.ConnectivityActionReceiver"
+            android:name="com.nigelcloud.android.broadcastreceivers.ConnectivityActionReceiver"
             android:enabled="true"
             android:label="ConnectivityActionReceiver">
             <intent-filter>
@@ -242,14 +241,14 @@
         </receiver>
 
         <activity
-            android:name=".ui.activity.CopyToClipboardActivity"
+            android:name="com.nigelcloud.android.ui.activity.CopyToClipboardActivity"
             android:icon="@drawable/copy_link"
             android:label="@string/copy_link" />
-        <activity android:name=".ui.activity.FolderPickerActivity" />
-        <activity android:name=".ui.activity.LocalFolderPickerActivity" />
-        <activity android:name=".ui.activity.UploadPathActivity" />
+        <activity android:name="com.nigelcloud.android.ui.activity.FolderPickerActivity" />
+        <activity android:name="com.nigelcloud.android.ui.activity.LocalFolderPickerActivity" />
+        <activity android:name="com.nigelcloud.android.ui.activity.UploadPathActivity" />
         <activity
-            android:name=".ui.activity.ShareActivity"
+            android:name="com.nigelcloud.android.ui.activity.ShareActivity"
             android:label="@string/share_dialog_title"
             android:launchMode="singleTop"
             android:theme="@style/Theme.ownCloud"
@@ -263,15 +262,15 @@
                 android:resource="@xml/users_and_groups_searchable" />
         </activity>
         <activity
-            android:name=".ui.activity.ManageSpaceActivity"
+            android:name="com.nigelcloud.android.ui.activity.ManageSpaceActivity"
             android:label="@string/manage_space_title"
             android:theme="@style/Theme.ownCloud" />
-        <activity android:name=".ui.activity.PrivacyPolicyActivity" />
+        <activity android:name="com.nigelcloud.android.ui.activity.PrivacyPolicyActivity" />
         <activity
-            android:name=".ui.preview.PreviewVideoActivity"
+            android:name="com.nigelcloud.android.ui.preview.PreviewVideoActivity"
             android:configChanges="keyboard|keyboardHidden|orientation|screenSize|screenLayout|smallestScreenSize|uiMode"
             android:theme="@style/Theme.ownCloud.Fullscreen" />
-        <activity android:name=".ui.activity.PatternLockActivity" />
-        <activity android:name=".ui.activity.FingerprintActivity"/>
+        <activity android:name="com.nigelcloud.android.ui.activity.PatternLockActivity" />
+        <activity android:name="com.nigelcloud.android.ui.activity.FingerprintActivity"/>
     </application>
 </manifest>

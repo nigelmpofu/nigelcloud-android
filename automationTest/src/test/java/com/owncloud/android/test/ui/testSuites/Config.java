@@ -18,7 +18,7 @@
  *
  */
 
-package com.owncloud.android.test.ui.testSuites;
+package com.nigelcloud.android.test.ui.testSuites;
 
 public final class Config {
 

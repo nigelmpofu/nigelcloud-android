@@ -18,7 +18,7 @@
  *
  */
 
-package com.owncloud.android.test.ui.testSuites;
+package com.nigelcloud.android.test.ui.testSuites;
 
 import static org.junit.Assert.*;
 import io.appium.java_client.android.AndroidDriver;
@@ -34,13 +34,13 @@ import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
-import com.owncloud.android.test.ui.actions.Actions;
-import com.owncloud.android.test.ui.groups.NoIgnoreTestCategory;
-import com.owncloud.android.test.ui.groups.SmokeTestCategory;
-import com.owncloud.android.test.ui.models.ElementMenuOptions;
-import com.owncloud.android.test.ui.models.FileListView;
-import com.owncloud.android.test.ui.models.NewFolderPopUp;
-import com.owncloud.android.test.ui.models.WaitAMomentPopUp;
+import com.nigelcloud.android.test.ui.actions.Actions;
+import com.nigelcloud.android.test.ui.groups.NoIgnoreTestCategory;
+import com.nigelcloud.android.test.ui.groups.SmokeTestCategory;
+import com.nigelcloud.android.test.ui.models.ElementMenuOptions;
+import com.nigelcloud.android.test.ui.models.FileListView;
+import com.nigelcloud.android.test.ui.models.NewFolderPopUp;
+import com.nigelcloud.android.test.ui.models.WaitAMomentPopUp;
 
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
@@ -107,7 +107,7 @@ public class RenameFileTestSuite{
 			FileListView fileListView = new FileListView(driver);
 			Actions.deleteElement(CurrentCreatedFile,fileListView, driver);
 		}
-		driver.removeApp("com.owncloud.android");
+		driver.removeApp("com.nigelcloud.android");
 		driver.quit();
 	}
 

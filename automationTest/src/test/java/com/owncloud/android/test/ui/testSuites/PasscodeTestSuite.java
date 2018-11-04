@@ -18,7 +18,7 @@
  *
  */
 
-package com.owncloud.android.test.ui.testSuites;
+package com.nigelcloud.android.test.ui.testSuites;
 
 import io.appium.java_client.android.AndroidDriver;
 
@@ -32,13 +32,13 @@ import org.junit.rules.TestName;
 import org.junit.runners.MethodSorters;
 import org.openqa.selenium.ScreenOrientation;
 
-import com.owncloud.android.test.ui.actions.Actions;
-import com.owncloud.android.test.ui.groups.NoIgnoreTestCategory;
-import com.owncloud.android.test.ui.models.FileListView;
-import com.owncloud.android.test.ui.models.MenuList;
-import com.owncloud.android.test.ui.models.PassCodeRequestView;
-import com.owncloud.android.test.ui.models.PassCodeView;
-import com.owncloud.android.test.ui.models.SettingsView;
+import com.nigelcloud.android.test.ui.actions.Actions;
+import com.nigelcloud.android.test.ui.groups.NoIgnoreTestCategory;
+import com.nigelcloud.android.test.ui.models.FileListView;
+import com.nigelcloud.android.test.ui.models.MenuList;
+import com.nigelcloud.android.test.ui.models.PassCodeRequestView;
+import com.nigelcloud.android.test.ui.models.PassCodeView;
+import com.nigelcloud.android.test.ui.models.SettingsView;
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
 public class PasscodeTestSuite {
@@ -73,7 +73,7 @@ public class PasscodeTestSuite {
 		
 		driver.sendKeyEvent(android.view.KeyEvent.KEYCODE_HOME);
 		//TO DO. Open the app instead of start an activity
-		driver.startActivity("com.owncloud.android", 
+		driver.startActivity("com.nigelcloud.android",
 				".ui.activity.FileDisplayActivity");
 		//here we check that we are not in the fileDisplayActivity,
 		//because pincode is asked
@@ -91,7 +91,7 @@ public class PasscodeTestSuite {
 	@After
 	public void tearDown() throws Exception {
 		common.takeScreenShotOnFailed(name.getMethodName());
-		driver.removeApp("com.owncloud.android");
+		driver.removeApp("com.nigelcloud.android");
 		driver.quit();
 	}
 

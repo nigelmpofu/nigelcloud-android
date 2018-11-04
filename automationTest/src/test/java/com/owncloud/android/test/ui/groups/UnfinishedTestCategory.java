@@ -18,7 +18,7 @@
  *
  */
 
-package com.owncloud.android.test.ui.groups;
+package com.nigelcloud.android.test.ui.groups;
 
 public interface UnfinishedTestCategory extends IgnoreTestCategory{
 

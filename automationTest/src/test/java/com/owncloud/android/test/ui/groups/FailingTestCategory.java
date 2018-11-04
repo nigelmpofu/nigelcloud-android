@@ -17,6 +17,6 @@
  *   along with this program.  If not, see <http://www.gnu.org/licenses/>.
  *
  */
-package com.owncloud.android.test.ui.groups;
+package com.nigelcloud.android.test.ui.groups;
 
 public interface FailingTestCategory extends IgnoreTestCategory {}

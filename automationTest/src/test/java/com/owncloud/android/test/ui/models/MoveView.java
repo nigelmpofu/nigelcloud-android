@@ -18,7 +18,7 @@
  *
  */
 
-package com.owncloud.android.test.ui.models;
+package com.nigelcloud.android.test.ui.models;
 
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.AndroidElement;
@@ -28,13 +28,13 @@ import io.appium.java_client.pagefactory.AppiumFieldDecorator;
 import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.PageFactory;
 
-import com.owncloud.android.test.ui.actions.Actions;
+import com.nigelcloud.android.test.ui.actions.Actions;
 
 public class MoveView {
 	final AndroidDriver driver;
 	
 	@CacheLookup
-	@AndroidFindBy(id = "com.owncloud.android:id/list_root")
+	@AndroidFindBy(id = "com.nigelcloud.android:id/list_root")
 	private AndroidElement filesLayout;
 	
 	@AndroidFindBy(name = "Choose")

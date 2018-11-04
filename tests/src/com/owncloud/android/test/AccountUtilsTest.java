@@ -18,10 +18,10 @@
  *
  */
 
-package com.owncloud.android.test;
+package com.nigelcloud.android.test;
 
-import com.owncloud.android.lib.common.accounts.AccountUtils;
-import com.owncloud.android.lib.resources.status.OwnCloudVersion;
+import com.nigelcloud.android.lib.common.accounts.AccountUtils;
+import com.nigelcloud.android.lib.resources.status.OwnCloudVersion;
 
 import android.test.AndroidTestCase;
 
@@ -37,8 +37,8 @@ public class AccountUtilsTest extends AndroidTestCase {
         OwnCloudVersion ocv45 = new OwnCloudVersion(0x040500);
         OwnCloudVersion ocv70 = new OwnCloudVersion(0x070000);
 
-        assertTrue(AccountUtils.getWebdavPath(ocv12, false, false).equals("/webdav/owncloud.php"));
-        assertTrue(AccountUtils.getWebdavPath(ocv12s, false, false).equals("/webdav/owncloud.php"));
+        assertTrue(AccountUtils.getWebdavPath(ocv12, false, false).equals("/webdav/nigelcloud.php"));
+        assertTrue(AccountUtils.getWebdavPath(ocv12s, false, false).equals("/webdav/nigelcloud.php"));
         assertTrue(AccountUtils.getWebdavPath(ocv22, false, false).equals("/files/webdav.php"));
         assertTrue(AccountUtils.getWebdavPath(ocv30,false, false).equals("/files/webdav.php"));
         assertTrue(AccountUtils.getWebdavPath(ocv33s, false, false).equals("/files/webdav.php"));

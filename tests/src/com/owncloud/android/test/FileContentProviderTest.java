@@ -1,7 +1,7 @@
-package com.owncloud.android.test;
+package com.nigelcloud.android.test;
 
-import com.owncloud.android.db.ProviderMeta.ProviderTableMeta;
-import com.owncloud.android.providers.FileContentProvider;
+import com.nigelcloud.android.db.ProviderMeta.ProviderTableMeta;
+import com.nigelcloud.android.providers.FileContentProvider;
 import android.annotation.TargetApi;
 import android.net.Uri;
 import android.os.Build;
@@ -23,7 +23,7 @@ public class FileContentProviderTest extends ProviderTestCase2<FileContentProvid
 	}
 	
 	public FileContentProviderTest() {
-		super(FileContentProvider.class, "com.owncloud.android.providers.FileContentProvider");	
+		super(FileContentProvider.class, "com.nigelcloud.android.providers.FileContentProvider");
 	}
 	
 	@Override
@@ -38,15 +38,15 @@ public class FileContentProviderTest extends ProviderTestCase2<FileContentProvid
 	}
 	
 	public void testGetTypeFile() {
-		Uri testuri = Uri.parse("content://org.owncloud/file/");
+		Uri testuri = Uri.parse("content://org.nigelcloud/file/");
 		assertEquals(ProviderTableMeta.CONTENT_TYPE_ITEM, resolve.getType(testuri));
 
-		testuri = Uri.parse("content://org.owncloud/file/123");
+		testuri = Uri.parse("content://org.nigelcloud/file/123");
 		assertEquals(ProviderTableMeta.CONTENT_TYPE_ITEM, resolve.getType(testuri));
 	}
 	
 	public void testGetTypeRoot() {
-		Uri testuri = Uri.parse("content://org.owncloud/");
+		Uri testuri = Uri.parse("content://org.nigelcloud/");
 		assertEquals(ProviderTableMeta.CONTENT_TYPE, resolve.getType(testuri));
 	}
 

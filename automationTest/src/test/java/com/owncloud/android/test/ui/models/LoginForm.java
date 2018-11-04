@@ -18,7 +18,7 @@
  *
  */
 
-package com.owncloud.android.test.ui.models;
+package com.nigelcloud.android.test.ui.models;
 
 import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.PageFactory;

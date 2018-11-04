@@ -18,7 +18,7 @@
  *
  */
 
-package com.owncloud.android.test.ui.models;
+package com.nigelcloud.android.test.ui.models;
 
 import java.util.List;
 
@@ -33,7 +33,7 @@ import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.Point;
 
-import com.owncloud.android.test.ui.actions.Actions;
+import com.nigelcloud.android.test.ui.actions.Actions;
 
 public class FileListView {
 	final AndroidDriver driver;
@@ -43,7 +43,7 @@ public class FileListView {
 	private AndroidElement menuButton;
 	
 	@CacheLookup
-	@AndroidFindBy(id = "com.owncloud.android:id/list_root")
+	@AndroidFindBy(id = "com.nigelcloud.android:id/list_root")
 	private AndroidElement filesLayout;
 	
 	@CacheLookup
@@ -65,10 +65,10 @@ public class FileListView {
 	
 	private AndroidElement waitAMomentText;
 	
-	@AndroidFindBy(id = "com.owncloud.android:id/ListItemLayout")
+	@AndroidFindBy(id = "com.nigelcloud.android:id/ListItemLayout")
 	private List<AndroidElement> listItemLayout;
 	
-	@AndroidFindBy(id = "com.owncloud.android:id/list_root")
+	@AndroidFindBy(id = "com.nigelcloud.android:id/list_root")
 	private AndroidElement listRootLayout;
 	
 	@AndroidFindBy(name = "Files")
@@ -87,11 +87,11 @@ public class FileListView {
 	private AndroidElement fileElementLayout;
 	
 	private static String localFileIndicator = 
-			"com.owncloud.android:id/localFileIndicator";
+			"com.nigelcloud.android:id/localFileIndicator";
 	private static String favoriteFileIndicator = 
-			"com.owncloud.android:id/favoriteIcon";
+			"com.nigelcloud.android:id/favoriteIcon";
 	private static String sharedElementIndicator = 
-			"com.owncloud.android:id/sharedIcon";
+			"com.nigelcloud.android:id/sharedIcon";
 	
 	
 	public FileListView (AndroidDriver driver) {

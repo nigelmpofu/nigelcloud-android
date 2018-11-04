@@ -1,4 +1,4 @@
-package com.owncloud.android.test.ui.models;
+package com.nigelcloud.android.test.ui.models;
 
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.AndroidElement;

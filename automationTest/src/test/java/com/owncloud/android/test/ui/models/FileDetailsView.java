@@ -18,7 +18,7 @@
  *
  */
 
-package com.owncloud.android.test.ui.models;
+package com.nigelcloud.android.test.ui.models;
 
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.AndroidElement;
@@ -35,7 +35,7 @@ public class FileDetailsView {
 	@AndroidFindBy(name = "Keep file up to date")
 	private AndroidElement keepFileUpToDateCheckbox;
 	
-	@AndroidFindBy(id = "com.owncloud.android:id/fdProgressBar")
+	@AndroidFindBy(id = "com.nigelcloud.android:id/fdProgressBar")
 	private AndroidElement progressBar;
 	
 	public FileDetailsView (AndroidDriver driver) {

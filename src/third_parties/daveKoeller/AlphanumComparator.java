@@ -27,7 +27,7 @@ package third_parties.daveKoeller;
 import java.text.Collator;
 import java.util.Comparator;
 
-import com.owncloud.android.datamodel.OCFile;
+import com.nigelcloud.android.datamodel.OCFile;
 
 /**
  * This is an updated version with enhancements made by Daniel Migowski,

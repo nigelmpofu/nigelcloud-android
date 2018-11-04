@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.owncloud.android.workaround.accounts">
+    package="com.nigelcloud.android.workaround.accounts">
 
     <uses-sdk
-        android:minSdkVersion="16"
         android:targetSdkVersion="26"
         tools:overrideLibrary="android.support.customtabs"/>
 
@@ -14,7 +13,7 @@
         android:label="@string/workaround_app_name"
         >
         <service
-            android:name=".AccountAuthenticatorService"
+            android:name="com.nigelcloud.android.workaround.accounts.AccountAuthenticatorService"
             android:exported="false">
             <intent-filter android:priority="1">
                 <action android:name="android.accounts.AccountAuthenticator" />

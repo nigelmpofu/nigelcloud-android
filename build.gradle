@@ -11,7 +11,7 @@ buildscript {
         jcenter()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:3.1.2'
+        classpath 'com.android.tools.build:gradle:3.2.1'
     }
 }
 
@@ -45,7 +45,7 @@ configurations.all {
 
 dependencies {
     /// dependencies for app building
-    implementation project(':owncloud-android-library')
+    implementation project(':nigelcloud-android-library')
     implementation "com.android.support:support-v4:${supportLibraryVersion}"
     implementation "com.android.support:design:${supportLibraryVersion}"
     implementation 'com.jakewharton:disklrucache:2.0.2'
@@ -101,6 +101,7 @@ android {
         manifestPlaceholders.versionName = "2.9.0"
 
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        minSdkVersion = 14
 
         // arguments to be passed to functional tests
         testInstrumentationRunnerArgument "TEST_USER", "\"$System.env.OCTEST_APP_USERNAME\""

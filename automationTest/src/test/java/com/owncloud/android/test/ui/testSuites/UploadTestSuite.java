@@ -18,7 +18,7 @@
  *
  */
 
-package com.owncloud.android.test.ui.testSuites;
+package com.nigelcloud.android.test.ui.testSuites;
 
 
 import static org.junit.Assert.*;
@@ -37,21 +37,21 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
-import com.owncloud.android.test.ui.actions.Actions;
-import com.owncloud.android.test.ui.groups.FailingTestCategory;
-import com.owncloud.android.test.ui.groups.InProgressCategory;
-import com.owncloud.android.test.ui.groups.NoIgnoreTestCategory;
-import com.owncloud.android.test.ui.groups.SmokeTestCategory;
-import com.owncloud.android.test.ui.groups.UnfinishedTestCategory;
-import com.owncloud.android.test.ui.models.FileDetailsView;
-import com.owncloud.android.test.ui.models.ElementMenuOptions;
-import com.owncloud.android.test.ui.models.GmailEmailListView;
-import com.owncloud.android.test.ui.models.GmailEmailView;
-import com.owncloud.android.test.ui.models.ImageView;
-import com.owncloud.android.test.ui.models.FileListView;
-import com.owncloud.android.test.ui.models.NotificationView;
-import com.owncloud.android.test.ui.models.SettingsView;
-import com.owncloud.android.test.ui.models.UploadView;
+import com.nigelcloud.android.test.ui.actions.Actions;
+import com.nigelcloud.android.test.ui.groups.FailingTestCategory;
+import com.nigelcloud.android.test.ui.groups.InProgressCategory;
+import com.nigelcloud.android.test.ui.groups.NoIgnoreTestCategory;
+import com.nigelcloud.android.test.ui.groups.SmokeTestCategory;
+import com.nigelcloud.android.test.ui.groups.UnfinishedTestCategory;
+import com.nigelcloud.android.test.ui.models.FileDetailsView;
+import com.nigelcloud.android.test.ui.models.ElementMenuOptions;
+import com.nigelcloud.android.test.ui.models.GmailEmailListView;
+import com.nigelcloud.android.test.ui.models.GmailEmailView;
+import com.nigelcloud.android.test.ui.models.ImageView;
+import com.nigelcloud.android.test.ui.models.FileListView;
+import com.nigelcloud.android.test.ui.models.NotificationView;
+import com.nigelcloud.android.test.ui.models.SettingsView;
+import com.nigelcloud.android.test.ui.models.UploadView;
 
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
@@ -130,13 +130,13 @@ public class UploadTestSuite{
 				Common.waitTillElementIsPresent(
 						notificationView.getUploadSucceededNotification(),300000);
 				driver.sendKeyEvent(android.view.KeyEvent.KEYCODE_HOME);
-				driver.startActivity("com.owncloud.android", 
+				driver.startActivity("com.nigelcloud.android",
 						".ui.activity.FileDisplayActivity");
 				
 			}
 		} catch (NoSuchElementException e) {
 			driver.sendKeyEvent(android.view.KeyEvent.KEYCODE_HOME);
-			driver.startActivity("com.owncloud.android", 
+			driver.startActivity("com.nigelcloud.android",
 					".ui.activity.FileDisplayActivity");
 		}
 
@@ -181,7 +181,7 @@ public class UploadTestSuite{
 		UploadView uploadView = new UploadView(driver);
 		uploadView.clickOUploadButton();
 		driver.sendKeyEvent(android.view.KeyEvent.KEYCODE_HOME);
-		driver.startActivity("com.owncloud.android",
+		driver.startActivity("com.nigelcloud.android",
 				".ui.activity.FileDisplayActivity");
 		common.wait.until(ExpectedConditions
 				.visibilityOfAllElementsLocatedBy(By.name(FILE_GMAIL_NAME)));
@@ -276,7 +276,7 @@ public class UploadTestSuite{
 			Actions.deleteElement(BIG_FILE_NAME,fileListView, driver);
 		}
 
-		//driver.removeApp("com.owncloud.android");
+		//driver.removeApp("com.nigelcloud.android");
 		driver.quit();
 	}
 

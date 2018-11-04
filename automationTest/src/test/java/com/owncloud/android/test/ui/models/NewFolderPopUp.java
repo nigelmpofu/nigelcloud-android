@@ -18,7 +18,7 @@
  *
  */
 
-package com.owncloud.android.test.ui.models;
+package com.nigelcloud.android.test.ui.models;
 
 import org.openqa.selenium.support.PageFactory;
 
@@ -36,7 +36,7 @@ public class NewFolderPopUp {
 	private AndroidElement newFolderOkButton;
 	
 	@AndroidFindBy(uiAutomator = "new UiSelector()"
-			+ ".resourceId(\"com.owncloud.android:id/user_input\")")
+			+ ".resourceId(\"com.nigelcloud.android:id/user_input\")")
 	private AndroidElement newFolderNameField;
 	
 	public NewFolderPopUp (AndroidDriver driver) {

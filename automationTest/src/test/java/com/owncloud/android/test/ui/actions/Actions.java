@@ -18,7 +18,7 @@
  *
  */
 
-package com.owncloud.android.test.ui.actions;
+package com.nigelcloud.android.test.ui.actions;
 
 import java.util.HashMap;
 
@@ -30,20 +30,20 @@ import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.AndroidElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import com.owncloud.android.test.ui.models.CertificatePopUp;
-import com.owncloud.android.test.ui.models.ElementMenuOptions;
-import com.owncloud.android.test.ui.models.GmailSendMailView;
-import com.owncloud.android.test.ui.models.ShareView;
-import com.owncloud.android.test.ui.models.UploadFilesView;
-import com.owncloud.android.test.ui.models.LoginForm;
-import com.owncloud.android.test.ui.models.FileListView;
-import com.owncloud.android.test.ui.models.MenuList;
-import com.owncloud.android.test.ui.models.NewFolderPopUp;
-import com.owncloud.android.test.ui.models.RemoveConfirmationView;
-import com.owncloud.android.test.ui.models.SettingsView;
-import com.owncloud.android.test.ui.models.WaitAMomentPopUp;
-import com.owncloud.android.test.ui.testSuites.Common;
-import com.owncloud.android.test.ui.testSuites.Config;
+import com.nigelcloud.android.test.ui.models.CertificatePopUp;
+import com.nigelcloud.android.test.ui.models.ElementMenuOptions;
+import com.nigelcloud.android.test.ui.models.GmailSendMailView;
+import com.nigelcloud.android.test.ui.models.ShareView;
+import com.nigelcloud.android.test.ui.models.UploadFilesView;
+import com.nigelcloud.android.test.ui.models.LoginForm;
+import com.nigelcloud.android.test.ui.models.FileListView;
+import com.nigelcloud.android.test.ui.models.MenuList;
+import com.nigelcloud.android.test.ui.models.NewFolderPopUp;
+import com.nigelcloud.android.test.ui.models.RemoveConfirmationView;
+import com.nigelcloud.android.test.ui.models.SettingsView;
+import com.nigelcloud.android.test.ui.models.WaitAMomentPopUp;
+import com.nigelcloud.android.test.ui.testSuites.Common;
+import com.nigelcloud.android.test.ui.testSuites.Config;
 
 public class Actions {
 
@@ -129,7 +129,7 @@ public class Actions {
 		try{
 			//To open directly the "file list view" and
 			//we don't need to know in which view we are
-			driver.startActivity("com.owncloud.android",
+			driver.startActivity("com.nigelcloud.android",
 					".ui.activity.FileDisplayActivity");
 			fileElement = (AndroidElement) driver
 					.findElementByName(elementName);
@@ -153,7 +153,7 @@ public class Actions {
 		try{
 			//To open directly the "file list view" and
 			//we don't need to know in which view we are
-			driver.startActivity("com.owncloud.android",
+			driver.startActivity("com.nigelcloud.android",
 					".ui.activity.FileDisplayActivity");
 			ElementMenuOptions menuOptions = fileListView
 					.longPressOnElement(elementName);
@@ -183,7 +183,7 @@ public class Actions {
 		try{
 			//To open directly the "file list view" and
 			//we don't need to know in which view we are
-			driver.startActivity("com.owncloud.android",
+			driver.startActivity("com.nigelcloud.android",
 					".ui.activity.FileDisplayActivity");
 			ElementMenuOptions menuOptions = fileListView
 					.longPressOnElement(elementName);
@@ -210,7 +210,7 @@ public class Actions {
 		try{
 			//To open directly the "file list view" and
 			//we don't need to know in which view we are
-			driver.startActivity("com.owncloud.android",
+			driver.startActivity("com.nigelcloud.android",
 					".ui.activity.FileDisplayActivity");
 			ElementMenuOptions menuOptions = fileListView
 					.longPressOnElement(elementName);
