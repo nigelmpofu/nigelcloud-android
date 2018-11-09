@@ -19,7 +19,7 @@
     <string name="server_url" formatted="false" translatable="false">https://cloud.nigelvm.com</string>
     <bool name="show_server_url_input">true</bool>
     <bool name="show_welcome_link">true</bool>
-    <string name="welcome_link_url" formatted="false" translatable="false">https://cloud.nigelvm.com/mobile/new</string>
+    <string name="welcome_link_url" formatted="false" translatable="false">https://cloud.nigelvm.com/</string>
     <string name="share_api_link" formatted="false" translatable="false"></string>
     
     <!-- Flags to setup the authentication methods available in the app -->
@@ -78,18 +78,18 @@
     <!-- OAuth2 -->
 
     <!-- constants that must be respected by the authorization server; if changed, the app must be rebuild -->
-    <string name="oauth2_redirect_uri">oc://cloud.nigelvm.com</string>
+    <string name="oauth2_redirect_uri" translatable="false">oc://android.owncloud.com</string>
 
     <!-- values that should be provided by ownCloud server -->
     <!-- AUTHORIZATION ENDPOINT -->
-    <string name="oauth2_url_endpoint_auth">index.php/apps/oauth2/authorize</string>
+    <string name="oauth2_url_endpoint_auth" translatable="false">index.php/apps/oauth2/authorize</string>
 
     <!-- TOKEN ENDPOINT -->
-    <string name="oauth2_url_endpoint_access">index.php/apps/oauth2/api/v1/token</string>
+    <string name="oauth2_url_endpoint_access" translatable="false">index.php/apps/oauth2/api/v1/token</string>
 
     <!-- values that should be pre-agreed between app and authorization server, but can be loaded without rebuilding the app -->
-    <string name="oauth2_client_id">e4rAsNUSIUs0lF4nbv9FmCeUkTlV9GdgTLDH1b5uie7syb90SzEVrbN7HIpmWJeD</string>
-    <string name="oauth2_client_secret">dInFYGV33xKzhbRmpqQltYNdfLdJIfJ9L5ISoKhNoT9qZftpdWSP71VrpGR9pmoD</string>
+    <string name="oauth2_client_id" translatable="false">LYD2JRwpjOBOelO93RZ4WmBy2V0LVI7iIgkGY5NZTyueRMJyLeT9TsB5cHnR2dr7</string>
+    <string name="oauth2_client_secret" translatable="false">HI6C1VQDa2lJTtjGd2CuAZ8zEZWNf7C2h4lAuVwUjOBWERdjFrTtou4wpfnpQ9c2</string>
 
     <!-- To enable/disable app rate feature -->
     <bool name="enable_rate_me_feature">true</bool>

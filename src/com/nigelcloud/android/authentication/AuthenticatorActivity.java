@@ -66,6 +66,7 @@ import android.view.View.OnFocusChangeListener;
 import android.view.View.OnTouchListener;
 import android.view.WindowManager;
 import android.view.inputmethod.EditorInfo;
+import android.view.inputmethod.InputMethodManager;
 import android.webkit.HttpAuthHandler;
 import android.webkit.SslErrorHandler;
 import android.webkit.WebView;
@@ -302,6 +303,17 @@ public class AuthenticatorActivity extends AccountAuthenticatorActivity
 
         /// load user interface
         setContentView(R.layout.account_setup);
+        findViewById(R.id.hostUrlInput).setEnabled(false);
+        // Consume on touch to prevent keyboard popup
+        findViewById(R.id.hostUrlInput).setOnTouchListener(new OnTouchListener() {
+            @Override
+            public boolean onTouch (View v, MotionEvent event) {
+                return true; // the listener has consumed the event
+            }
+        });
+        // Hide keyboard on load
+        InputMethodManager imm = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
+        imm.hideSoftInputFromWindow(findViewById(android.R.id.content).getWindowToken(), 0);
 
         // Set login background color or image
         if (!getResources().getBoolean(R.bool.use_login_background_image)) {
