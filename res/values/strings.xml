@@ -585,4 +585,7 @@
     <string name="welcome_feature_8_title">Available offline</string>
     <string name="welcome_feature_8_text">Your files automatically synchronized</string>
     <string name="no_borwser_installed_alert">No browser installed. Please install a Browser in order to allow a secure login.</string>
+    <string name="default_display_name_for_root_folder" translatable="false">NigelCloud</string>
+    <string name="url_sync_calendar_contacts" translatable="false">https://cloud.nigelvm.com/contacts</string>
+    <string name="url_app_download" translatable="false">https://cloud.nigelvm.com/app</string>
 </resources>

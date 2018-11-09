@@ -67,7 +67,7 @@
 
     <application
         android:name="com.nigelcloud.android.MainApp"
-        android:icon="@mipmap/icon"
+        android:icon="@mipmap/ic_icon"
         android:label="@string/app_name"
         android:manageSpaceActivity="com.nigelcloud.android.ui.activity.ManageSpaceActivity"
         android:resizeableActivity="true"

@@ -2,32 +2,31 @@
 <resources>
 
     <!-- App name  and other strings-->
-    <string name="app_name" formatted="false">ownCloud</string>
-    <string name="account_type" formatted="false">owncloud</string>	<!-- better if was a domain name; but changing it now would require migrate accounts when the app is updated -->
-    <string name="authority" formatted="false">org.owncloud</string>
-    <string name="document_provider_authority" formatted="false">org.owncloud.documents</string>
-    <string name="file_provider_authority" formatted="false">org.owncloud.files</string>
-    <string name="search_suggest_authority" formatted="false">org.owncloud.search.users_and_groups</string>
-    <string name="search_suggest_intent_action" formatted="false">org.owncloud.search.users_and_groups.action.SHARE_WITH</string>
-    <string name ="db_file" formatted="false">owncloud.db</string>
-    <string name ="db_name" formatted="false">ownCloud</string>
-    <string name ="data_folder" formatted="false">owncloud</string>
-    <string name ="log_name" formatted="false">Owncloud_</string>
-    <string name ="default_display_name_for_root_folder" formatted="false">ownCloud</string>
-    <string name ="user_agent">Mozilla/5.0 (Android) ownCloud-android/%1$s</string>
+    <string name="app_name" formatted="false" translatable="false">Nigel Cloud</string>
+    <string name="account_type" formatted="false" translatable="false">NigelCloud</string>	<!-- better if was a domain name; but changing it now would require migrate accounts when the app is updated -->
+    <string name="authority" formatted="false" translatable="false">com.nigelcloud</string>
+    <string name="document_provider_authority" formatted="false" translatable="false">com.nigelcloud.documents</string>
+    <string name="file_provider_authority" formatted="false" translatable="false">com.nigelcloud.files</string>
+    <string name="search_suggest_authority" formatted="false" translatable="false">com.nigelcloud.search.users_and_groups</string>
+    <string name="search_suggest_intent_action" formatted="false" translatable="false">com.nigelcloud.search.users_and_groups.action.SHARE_WITH</string>
+    <string name ="db_file" formatted="false" translatable="false">nigelcloud.db</string>
+    <string name ="db_name" formatted="false" translatable="false">NigelCloud</string>
+    <string name ="data_folder" formatted="false" translatable="false">nigelcloud</string>
+    <string name ="log_name" formatted="false" translatable="false">NigelCloud_</string>
+    <string name ="user_agent" translatable="false">Mozilla/5.0 (Android) NigelCloud-android/%1$s</string>
     
     <!-- URLs and flags related -->
-    <string name="server_url" formatted="false"></string>
+    <string name="server_url" formatted="false" translatable="false">https://cloud.nigelvm.com</string>
     <bool name="show_server_url_input">true</bool>
     <bool name="show_welcome_link">true</bool>
-    <string name="welcome_link_url" formatted="false">"https://owncloud.com/mobile/new"</string>
-    <string name="share_api_link" formatted="false"></string>
+    <string name="welcome_link_url" formatted="false" translatable="false">https://cloud.nigelvm.com/mobile/new</string>
+    <string name="share_api_link" formatted="false" translatable="false"></string>
     
     <!-- Flags to setup the authentication methods available in the app -->
-    <string name="auth_method_saml_web_sso" formatted="false">off</string>
+    <string name="auth_method_saml_web_sso" formatted="false" translatable="false">off</string>
     
     <!-- Flags to enable/disable some features -->
-    <string name = "send_files_to_other_apps" formatted="false">on</string>
+    <string name = "send_files_to_other_apps" formatted="false" translatable="false">on</string>
     <bool name = "share_via_link_feature">true</bool>
     <bool name = "share_with_users_feature">true</bool>
     <bool name = "warning_sharing_public_link" >true</bool>
@@ -36,7 +35,7 @@
     <color name="login_text_color">@color/white</color>
     <color name="login_text_hint_color">#dddddd</color>
     <color name="login_background_color">@color/owncloud_blue</color>
-    <color name="login_connection_text_color">@color/white</color>
+    <color name="login_connection_text_color">#000322</color>
     <color name="login_credentials_text_color">@color/white</color>
     <color name="login_button_background_color">@color/white</color>
     <color name="login_button_text_color">@color/color_accent</color>
@@ -67,21 +66,19 @@
     <bool name="logger_enabled">false</bool>
     <bool name="privacy_policy_enabled">true</bool>
     <bool name="wizard_enabled">true</bool>
-    <string name="url_privacy_policy" formatted="false">https://owncloud.com/privacy-legal/</string>
-    <string name="url_help" formatted="false">https://owncloud.com/mobile/help</string>
-    <string name="url_imprint" formatted="false"></string>
-    <string name="mail_recommend" formatted="false">"mailto:"</string>
-    <string name="mail_feedback" formatted="false">"mailto:apps@owncloud.com"</string>
-    <string name="url_app_download" formatted="false">"https://play.google.com/store/apps/details?id=com.owncloud.android"</string>
-    <string name="url_sync_calendar_contacts">"https://play.google.com/store/apps/details?id=at.bitfire.davdroid"</string>
+    <string name="url_privacy_policy" formatted="false" translatable="false">https://cloud.nigelvm.com/privacy-legal/</string>
+    <string name="url_help" formatted="false" translatable="false">https://owncloud.com/mobile/help</string>
+    <string name="url_imprint" formatted="false" translatable="false"></string>
+    <string name="mail_recommend" formatted="false" translatable="false">"mailto:"</string>
+    <string name="mail_feedback" formatted="false" translatable="false">"mailto:apps@owncloud.com"</string>
 
     <!--Destination mail for sending log files -->
-    <string name="mail_logger" formatted="false"></string>
+    <string name="mail_logger" formatted="false" translatable="false"></string>
 
     <!-- OAuth2 -->
 
     <!-- constants that must be respected by the authorization server; if changed, the app must be rebuild -->
-    <string name="oauth2_redirect_uri">oc://android.owncloud.com</string>
+    <string name="oauth2_redirect_uri">oc://cloud.nigelvm.com</string>
 
     <!-- values that should be provided by ownCloud server -->
     <!-- AUTHORIZATION ENDPOINT -->

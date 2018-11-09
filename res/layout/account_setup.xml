@@ -94,9 +94,10 @@
                     android:hint="@string/auth_host_url"
                     android:inputType="textUri"
                     android:paddingRight="55dp"
+                    android:textColor="@color/login_background_color"
                     android:theme="@style/EditText.Authenticator">
 
-                    <requestFocus/>
+                    <requestFocus />
                 </EditText>
 
                 <ImageButton
@@ -136,7 +137,7 @@
                 android:gravity="center_vertical"
                 android:minHeight="32dp"
                 android:text="@string/auth_testing_connection"
-                android:textColor="@color/login_connection_text_color"/>
+                android:textColor="@color/login_background_color" />
 
             <EditText
                 android:id="@+id/account_username"
@@ -198,10 +199,10 @@
                     android:contentDescription="@string/auth_register"
                     android:gravity="center"
                     android:onClick="onRegisterClick"
-                    android:paddingBottom="5dp"
                     android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
                     android:text="@string/auth_register"
-                    android:textColor="@color/login_text_color"/>
+                    android:textColor="@color/owncloud_blue" />
             </LinearLayout>
         </LinearLayout>
     </ScrollView>
